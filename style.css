@@ -1,0 +1,24 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box{
+    width: 350px;
+    height: 400px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 1.5px 3px 0 rgba(60, 60, 60, 0.10);
+    border-radius: 20px;
+}
