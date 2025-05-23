@@ -14,15 +14,239 @@
     color: #fff;
     text-align: center;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .box{
+    background: rgba(255, 255, 255, 0.9) !important;
     width: 350px;
     height: 400px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 1.5px 3px 0 rgba(60, 60, 60, 0.10);
-    border-radius: 20px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
 }
 
-.box .box1{
-    background-color: red;
+.box1{
+    background: linear-gradient(135deg, #00B4DB, #0083B0);
+    color: white;
+    width: 90%;
+    height: 35%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.box1:hover {
+    transform: scale(1.02);
+}
+
+.dayTime-durationBox{
+    background: linear-gradient(135deg, #2980B9, #6DD5FA);
+    width: 90%;
+    height: 25%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box2{
+    background: linear-gradient(135deg, #FF416C, #FF4B2B);
+    color: white;
+    width: 90%;
+    height: 15%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.box2:hover {
+    transform: scale(1.02);
+}
+
+.box3{
+    background: transparent;
+    width: 90%;
+    height: 35%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.mondayBox{
+    background: linear-gradient(135deg, #4B6CB7, #182848);
+    color: white;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.mondayBox:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.tuesdayBox{
+    background: linear-gradient(135deg, #4B6CB7, #182848);
+    color: white;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.tuesdayBox:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.wednesdayBox{
+    background: linear-gradient(135deg, #4B6CB7, #182848);
+    color: white;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.wednesdayBox:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.thursdayBox{
+    background: linear-gradient(135deg, #4B6CB7, #182848);
+    color: white;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.thursdayBox:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.fridayBox{
+    background: linear-gradient(135deg, #4B6CB7, #182848);
+    color: white;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.fridayBox:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.saturdayBox{
+    background: linear-gradient(135deg, #4B6CB7, #182848);
+    color: white;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.saturdayBox:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.sundayBox{
+    background: linear-gradient(135deg, #4B6CB7, #182848);
+    color: white;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.sundayBox:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
