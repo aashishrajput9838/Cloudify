@@ -3,39 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Cloudify - A Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <header class="app-header">
+        <h1>Cloudify - A Weather App</h1>
+    </header>
     <div class="mainContainer">
         <div class="container">
             <div class="header">
-                <h1>Weather App</h1>
+                <div class="search-container">
+                    <input type="text" id="cityInput" placeholder="Enter city name">
+                    <button id="searchButton">Search</button>
+                </div>
             </div>
             <div class="box">
+                <div id="loading" class="loading-spinner" style="display: none;">Loading...</div>
                 <div class="box1">
-                    <h1>Cloudy</h1>
-                    <h2>24°C</h2>
+                    <i id="weatherIcon" class="fas fa-cloud weather-icon"></i>
+                    <h1 id="weatherCondition">--</h1>
+                    <h2 id="temperature">--°C</h2>
                     <div class="dayTime-durationBox">
-                        <span>Monday, 12:30 PM</span>
+                        <span id="datetime">--</span>
                     </div>
                 </div>
-                <div class="box2">Rain 90%</div>
-                <div class="box3">
-                    <div class="mondayBox">Mon</div>
-                    <div class="tuesdayBox">Tue</div>
-                    <div class="wednesdayBox">Wed</div>
-                    <div class="thursdayBox">Thu</div>
-                    <div class="fridayBox">Fri</div>
-                    <div class="saturdayBox">Sat</div>
-                    <div class="sundayBox">Sun</div>
+                <div class="box2" id="rainChance">Humidity --</div>
+                <div class="box3" id="forecast">
+                    <!-- Day boxes will be dynamically generated here -->
                 </div>
             </div>
         </div>
     </div>
-    <div id="weather-result"></div>
+    <footer class="app-footer">
+        <p>&copy; 2025 Cloudify. All rights reserved.</p>
+    </footer>
 
+    <!-- jQuery should come first -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>         
 </body>
 </html>

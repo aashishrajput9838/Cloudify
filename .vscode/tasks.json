@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"command": "live-server",
+			"label": "Run Weather App",
+			"type": "shell"
+		}
+	]
+}
